@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- Bài Tập 1 -->
+    <div class="card w-50 m-auto text-center mt-5">
+      <div class="card-header">
+        <h2>bài tập 1 - tính tiền lương nhân viên</h2>
+      </div>
+      <div class="card-body text-start">
+        <label for="luongTrenNgay">lương trên ngày</label>
+        <input
+          type="text"
+          id="luongTrenNgay"
+          class="form-control"
+          readonly
+          value="100.000 VNĐ"
+        />
+        <label for="soNgayLam">số ngày làm</label>
+        <input type="number" id="soNgayLam" class="form-control" />
+        <div class="text-center mt-3">
+          <button class="btn btn-primary">KẾT QUẢ</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="ketQuaBaiTap text-bg-primary p-2 m-auto rounded-3"></div>
+      </div>
+    </div>
+
+    <!-- Bài Tập 2 -->
+    <div class="card w-50 m-auto text-center mt-5">
+      <div class="card-header">
+        <h2>bài tập 2 - tính giá trị trung bình</h2>
+      </div>
+      <div class="card-body text-start">
+        <label for="soThuc_1">số thực 1</label>
+        <input type="number" id="soThuc_1" class="form-control" />
+        <label for="soThuc_2">số thực 2</label>
+        <input type="number" id="soThuc_2" class="form-control" />
+        <label for="soThuc_3">số thực 3</label>
+        <input type="number" id="soThuc_3" class="form-control" />
+        <label for="soThuc_4">số thực 4</label>
+        <input type="number" id="soThuc_4" class="form-control" />
+        <label for="soThuc_5">số thực 5</label>
+        <input type="number" id="soThuc_5" class="form-control" />
+        <div class="text-center mt-3">
+          <button class="btn btn-primary">KẾT QUẢ</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="ketQuaBaiTap text-bg-primary p-2 m-auto rounded-3"></div>
+      </div>
+    </div>
+
+    <!-- Bài Tập 3 -->
+    <div class="card w-50 m-auto text-center mt-5">
+      <div class="card-header">
+        <h2>bài tập 3 - quy đổi tiền</h2>
+      </div>
+      <div class="card-body text-start">
+        <label for="priceUSD">tỷ giá USD</label>
+        <input
+          type="text"
+          id="priceUSD"
+          class="form-control"
+          readonly
+          value="23.500 VNĐ"
+        />
+        <label for="usdQuyDoi">nhập số USD cần quy đổi</label>
+        <input type="number" id="usdQuyDoi" class="form-control" />
+        <div class="text-center mt-3">
+          <button class="btn btn-primary">KẾT QUẢ</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="ketQuaBaiTap text-bg-primary p-2 m-auto rounded-3"></div>
+      </div>
+    </div>
+
+    <!-- Bài Tập 4 -->
+    <div class="card w-50 m-auto text-center mt-5">
+      <div class="card-header">
+        <h2>bài tập 4 - tính chu vi, diện tích hình chữ nhật</h2>
+      </div>
+      <div class="card-body text-start">
+        <label for="chieuRong">nhập vào chiều rộng</label>
+        <input type="number" id="chieuRong" class="form-control" />
+        <label for="chieuDai">nhập vào chiều dài</label>
+        <input type="number" id="chieuDai" class="form-control" />
+        <div class="text-center mt-3">
+          <button class="btn btn-primary">KẾT QUẢ</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="ketQuaBaiTap text-bg-primary p-2 m-auto rounded-3"></div>
+      </div>
+    </div>
+
+    <!-- Bài Tập 5 -->
+    <div class="card w-50 m-auto text-center mt-5 mb-5">
+      <div class="card-header">
+        <h2>bài tập 5- tính tổng 2 ký số</h2>
+      </div>
+      <div class="card-body text-start">
+        <label for="nhapSo">nhập số</label>
+        <input type="number" id="nhapSo" class="form-control" onkeypress="if(this.value.length>1) return false" />
+        <div class="text-center mt-3">
+          <button class="btn btn-primary">KẾT QUẢ</button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <div class="ketQuaBaiTap text-bg-primary p-2 m-auto rounded-3"></div>
+      </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="./index.js"></script>
+  </body>
+</html>
